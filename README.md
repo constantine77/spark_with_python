@@ -85,26 +85,31 @@ export PYSPARK_DRIVER_PYTHON_OPTS="notebook"
 8. Type the following into your terminal
 source .bash_profile
 9.Go to spark folder and Run bin/PySpark
-Core Spark Concepts:
-        1. Drivers and Executors
-        2. Spark Context and Configurations
-        3. Transformation and Actions
-        4. Building an end to end application
-        5. Introduce Directed Acyclic Graph (DAG)
+# Core Spark Concepts:
+1. Drivers and Executors
+2. Spark Context and Configurations
+3. Transformation and Actions
+4. Building an end to end application
+5. Introduce Directed Acyclic Graph (DAG)
 
-        PySpark is the Python API to Spark.
+PySpark is the Python API to Spark.
         
-        Drivers and Executors:
+Drivers and Executors:
         
-        At a high level, every Spark application consists of a driver program that launches various parallel operations on a cluster. Typical driver program could be the Spark shell itself, and you could just type in the operations you wanted to run.
-        Driver program access Spark through a SparkContext object, which represents a connection to a computing cluster. In the shell, a SparkContext is automatically created for you as the variable called ‘sc’.
-        Once you have a SparkContext, you can use it to build RDDs
-        sc.textFile("README.md")
-        This RDD represents the lines of a text in a file and subsequently we can run more operations on these lines like -
-        lines.count() # Count the number of items in this RDD
+At a high level, every Spark application consists of a driver program that launches various parallel operations on a cluster. Typical driver program could be the Spark shell itself, and you could just type in the operations you wanted to run.
+Driver program access Spark through a SparkContext object, which represents a connection to a computing cluster. In the shell, a SparkContext is automatically created for you as the variable called ‘sc’.
+Once you have a SparkContext, you can use it to build RDDs
+'''
+sc.textFile("README.md")
+'''
+This RDD represents the lines of a text in a file and subsequently we can run more operations on these lines like -
+'''
+lines.count()
+'''# Count the number of items in this RDD
         
-        To run these operations, driver programs typically manage a number of nodes called executors. For example, if we were running the count() operation on a cluster, different machines might count lines in different ranges of the file. The below schematic diagram shows how Spark executes on a cluster.
-        
+To run these operations, driver programs typically manage a number of nodes called executors. For example, if we were running the count() operation on a cluster, different machines might count lines in different ranges of the file. The below schematic diagram shows how Spark executes on a cluster.
+
+![alt text](https://github.com/constantine77/spark_with_python/blob/master/src/screenshots/executors.png)
         
         
 For example, we could extend our README example by filtering the lines in the file that contain a word, such as Python:
