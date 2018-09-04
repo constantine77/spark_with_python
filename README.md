@@ -60,7 +60,7 @@ Talking about Spark with Python, working with RDDs is made possible by the libra
 3. Cluster Managers provide Executors, which are JVM processes with logic.
 4. Spark Context objects send the application to executors.
 5. Spark Context executes tasks in each executor.
-(https://github.com/constantine77/spark_with_python/blob/master/src/screenshots/pyspark.png)
+![alt text](https://github.com/constantine77/spark_with_python/blob/master/src/screenshots/pyspark.png)
 
 
  
