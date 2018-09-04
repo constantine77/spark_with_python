@@ -47,6 +47,8 @@ Spark’s shell provides a simple way to learn the API, as well as a powerful to
 Spark Session: 
 In earlier versions of Spark, Spark Context was the entry point for Spark. For every other API, we needed to use different contexts. For streaming, we needed StreamingContext, for SQL sqlContext and for hive HiveContext. To solve this issue, SparkSession came into the picture. It is essentially a combination of SQLContext, HiveContext and future StreamingContext.
 Summary: the spark session is one of the variety of entry points to the cluster.
+Spark Aplication Deployment:
+![alt text](https://github.com/constantine77/spark_with_python/blob/master/src/screenshots/data-with-spark.jpg)
 
 PySpark SparkContext and Data Flow
 Talking about Spark with Python, working with RDDs is made possible by the library Py4j. PySpark Shell links the Python API to Spark Core and initializes the Spark Context. Spark Context is at the heart of any Spark application.
