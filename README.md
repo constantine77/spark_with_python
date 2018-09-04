@@ -47,7 +47,8 @@ Spark’s shell provides a simple way to learn the API, as well as a powerful to
 Spark Session: 
 In earlier versions of Spark, Spark Context was the entry point for Spark. For every other API, we needed to use different contexts. For streaming, we needed StreamingContext, for SQL sqlContext and for hive HiveContext. To solve this issue, SparkSession came into the picture. It is essentially a combination of SQLContext, HiveContext and future StreamingContext.
 Summary: the spark session is one of the variety of entry points to the cluster.
-Spark Aplication Deployment:
+
+Spark Aplication Deployment(pic):
 
 ![alt text](https://github.com/constantine77/spark_with_python/blob/master/src/screenshots/data-with-spark.jpg)
 
