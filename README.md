@@ -10,4 +10,4 @@ The goal of this project is to learn all the technical details of how Spark work
 3. [PythonFundamentals:](#pythonfundamentals)
   * 3.1 [Modularity:](#modularity)
   
-  ##Theory
+## Theory
