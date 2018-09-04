@@ -52,13 +52,15 @@ Spark Aplication Deployment(pic):
 
 ![alt text](https://github.com/constantine77/spark_with_python/blob/master/src/screenshots/data-with-spark.jpg)
 
-PySpark SparkContext and Data Flow
+PySpark SparkContext and Data Flow:
+
 Talking about Spark with Python, working with RDDs is made possible by the library Py4j. PySpark Shell links the Python API to Spark Core and initializes the Spark Context. Spark Context is at the heart of any Spark application.
-        1. Spark Context sets up internal services and establishes a connection to a Spark execution environment.
-        2. The Spark Context object in driver program coordinates all the distributed processes and allows for resource allocation.
-        3. Cluster Managers provide Executors, which are JVM processes with logic.
-        4. Spark Context objects send the application to executors.
-        5. Spark Context executes tasks in each executor.
+1. Spark Context sets up internal services and establishes a connection to a Spark execution environment.
+2. The Spark Context object in driver program coordinates all the distributed processes and allows for resource allocation.
+3. Cluster Managers provide Executors, which are JVM processes with logic.
+4. Spark Context objects send the application to executors.
+5. Spark Context executes tasks in each executor.
+(https://github.com/constantine77/spark_with_python/blob/master/src/screenshots/pyspark.png)
 
 
  
